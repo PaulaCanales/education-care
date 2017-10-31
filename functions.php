@@ -75,6 +75,7 @@ function education_care_setup() {
 		'flex-height' => true,
 		'flex-width'  => true,
 	) );
+
 }
 endif;
 add_action( 'after_setup_theme', 'education_care_setup' );

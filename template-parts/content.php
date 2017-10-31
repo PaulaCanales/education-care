@@ -8,14 +8,65 @@
  */
 
 ?>
+<style>
+	.featured-thumb{
+		background-size: cover;
+    	background-repeat: no-repeat;
+		height: 400px;
+		opacity: 0.7;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	}
+	.middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 200px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%)
+	}
+
+	.featured-thumb:hover .image {
+		opacity: 0.3;
+	}
+
+	.featured-thumb:hover .middle {
+		opacity: 1;
+	}
+
+	.text {
+		background-color: #77B227;
+		color: white;
+		font-size: 25px;
+		padding: 16px 32px;
+		text-align: center;
+	}
+</style>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('blog-single-item'); ?>>
 	<div class="single-wrap">
 		<?php if ( has_post_thumbnail() ) : ?>
-		<div class="featured-thumb">
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
-		</div>
+		<?php $thumbnail_data = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' );
+		$thumbnail_url = $thumbnail_data[0];?>
+
+		<?php else: ?>
+		<?php $thumbnail_url= "http://localhost/wordpress/emprendizajeuach/wp-content/uploads/2017/08/default01.png"?>
+		
 		<?php endif; ?>
+
+		<div class="featured-thumb" style="background-image:url('<?php echo $thumbnail_url ?>')">
+			<div class="middle">
+				 <?php
+				if ( is_single() ) :
+					the_title( '<div class="text">', '</div>' );
+				else :
+					the_title( '<div class="text"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></div>' );
+				endif; ?>
+
+
+			</div>
+		</div>
 
 		<div class="content-wrap">
 	        <header class="entry-header">
@@ -26,13 +77,6 @@
 	            </div>
 
 	        </header>
-
-	        <?php
-	        if ( is_single() ) :
-	        	the_title( '<h2 class="entry-title">', '</h2>' );
-	        else :
-	        	the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-	        endif; ?>
 
 	        <footer class="entry-footer">
 	        	<?php printf( esc_html_x( 'By %s', 'post author', 'education-care' ), '<span class="byline"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>' ); ?>
@@ -53,11 +97,6 @@
 	        			/* translators: %s: Name of current post. */
 	        			wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'education-care' ), array( 'span' => array( 'class' => array() ) ) ),
 	        			the_title( '<span class="screen-reader-text">"', '"</span>', false )
-	        		) );
-
-	        		wp_link_pages( array(
-	        			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'education-care' ),
-	        			'after'  => '</div>',
 	        		) );
 	        	?>
 	            

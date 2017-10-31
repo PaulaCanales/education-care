@@ -27,146 +27,11 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="top-header">
-		    <div class="container">
-		        <div class="top-header-content">
-		              <div class="top-info-left left">
-		                  
-		                  	<?php 
-		                  	$top_left = education_care_options( 'top_left' );
-
-		                  	if( 'contact_details' == $top_left ){ ?>
-
-		                  		<div class="top-contact-info">
-
-			                  		<?php 
-			                  		if( !empty( education_care_options('conatct_address') ) ){ ?>
-			                  			<span class="address"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_address') ); ?></span>
-			                  		<?php } ?>
-
-			                  		<?php 
-			                  		if( !empty( education_care_options('conatct_email') ) ){ ?>
-			                  			<span class="email"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_email') ); ?></span>
-			                  		<?php } ?>
-
-			                  		<?php 
-			                  		if( !empty( education_care_options('conatct_phone') ) ){ ?>
-			                  			<span class="phone"><i class="fa fa-phone" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_phone') ); ?></span>
-			                  		<?php } ?>
-
-			                  	</div><!-- .top-contact-info -->
-
-		                  	<?php
-
-		                  	} elseif ( 'notice' == $top_left ) {
-
-		                  		get_template_part( 'template-parts/notices' );
-		                  		
-		                  	} ?>
-
-		                  
-		              </div><!-- .top-info-left -->
-
-		              <div class="top-info-right right">
-		              	<?php 
-		              	$top_right = education_care_options( 'top_right' );
-
-		              	if( 'contact_details' == $top_right ){ ?>
-
-		              		<div class="top-contact-info">
-		              		
-			              		<?php 
-			              		if( !empty( education_care_options('conatct_address') ) ){ ?>
-			              			<span class="address"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_address') ); ?></span>
-			              		<?php } ?>
-
-			              		<?php 
-			              		if( !empty( education_care_options('conatct_email') ) ){ ?>
-			              			<span class="email"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_email') ); ?></span>
-			              		<?php } ?>
-
-			              		<?php 
-			              		if( !empty( education_care_options('conatct_phone') ) ){ ?>
-			              			<span class="phone"><i class="fa fa-phone" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_phone') ); ?></span>
-			              		<?php } ?>
-
-		              		</div><!-- .top-contact-info -->
-
-		              	<?php
-
-		              	} elseif ( 'notice' == $top_right ) {
-
-		              		get_template_part( 'template-parts/notices' );
-		              		
-		              	} elseif ( 'social_links' == $top_right ) { ?>
-
-		              		<div class="social-widgets">
-		              		    <ul>
-		              		      <?php 
-					                for( $j= 1; $j<=6; $j++ ){ 
-
-					                	$social_link = education_care_options('social_link_'.$j);
-
-					                	if( !empty( $social_link ) ){ ?>
-
-					                  		<li><a target="_blank" href="<?php echo esc_url( $social_link ); ?>"><?php echo esc_url($social_link); ?></a></li>
-
-					                	<?php 
-					                	} 
-
-					                } ?>
-		              		    </ul> 
-		              		</div><!-- .social-widgets -->
-
-		              		<?php
-		              		
-		              	} elseif ( 'mixed' == $top_right ) { 
-
-		              		if( !empty( education_care_options('conatct_address') ) ){ ?>
-		              			<span class="address"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_address') ); ?></span>
-		              		<?php } ?>
-
-		              		<?php 
-		              		if( !empty( education_care_options('conatct_email') ) ){ ?>
-		              			<span class="email"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_email') ); ?></span>
-		              		<?php } ?>
-
-		              		<?php 
-		              		if( !empty( education_care_options('conatct_phone') ) ){ ?>
-		              			<span class="phone"><i class="fa fa-phone" aria-hidden="true"></i> <?php echo esc_html( education_care_options('conatct_phone') ); ?></span>
-		              		<?php } ?>
-
-  		              		<div class="social-widgets">
-  		              		    <ul>
-  		              		      <?php 
-  					                for( $j= 1; $j<=6; $j++ ){ 
-
-  					                	$social_link = education_care_options('social_link_'.$j);
-
-  					                	if( !empty( $social_link ) ){ ?>
-
-  					                  		<li><a target="_blank" href="<?php echo esc_url( $social_link ); ?>"><?php echo esc_url($social_link); ?></a></li>
-
-  					                	<?php 
-  					                	} 
-
-  					                } ?>
-  		              		    </ul> 
-  		              		</div><!-- .social-widgets -->
-
-		              	<?php
-		              		
-		              	} 
-		              	?>
-		                  
-		              </div><!-- .top-info-right -->
-		        </div><!-- .top-header-content -->   
-		    </div>
-		</div><!-- .top-header -->
+		
 
 		<div class="bottom-header">
 		    <div class="container">
-		        <div class="site-main-header">
+		        <div class="site-main-header" style="padding-bottom: 0px; padding-left: 20px;">
 		               <div class="site-branding">
 		                  	<?php 
 
@@ -261,7 +126,6 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<?php get_template_part( 'template-parts/breadcrumbs' ); ?>
 
 	<div id="content" class="site-content">
 

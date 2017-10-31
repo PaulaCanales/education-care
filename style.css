@@ -473,7 +473,7 @@ button,
  input[type="reset"],
  input[type="submit"] {
     background: #fff none repeat scroll 0 0;
-    color: #ffb606;
+    color: #78B227;
     font-size: 16px;
     line-height: 1;
     padding: 11px 35px;
@@ -506,8 +506,8 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
     background-color: transparent ;
-    border-color: #ffb606;
-    color: #ffb606;
+    border-color: #78B227;
+    color: #78B227;
 }
 
 button:focus,
@@ -599,18 +599,18 @@ form.wpcf7-form.invalid input.wpcf7-validates-as-required :-ms-input-placeholder
 --------------------------------------------------------------*/
 
 a {
-    color: #ffb606 ;
+    color: #78B227 ;
     text-decoration: inherit;
 }
 
 a:visited {
-    color: #ffb606 ;
+    color: #78B227 ;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color:#ffb606;
+    color:#78B227;
 }
 
 a:focus {
@@ -778,7 +778,7 @@ a:active {
 .posts-navigation .nav-next,
 .post-navigation .nav-next,
 #infinite-handle span {
-    background:#ffb606 ;
+    background:#78B227 ;
     float: left;
     padding: 5px 15px;
     width: auto;
@@ -802,7 +802,7 @@ a:active {
 .posts-navigation .nav-next:hover,
 .post-navigation .nav-next:hover,
  #infinite-handle span:hover {
-    background:#ffb606;
+    background:#78B227;
 }
 
 .comment-navigation .nav-previous,
@@ -999,7 +999,7 @@ a:active {
 }
 
 #home-page-widget-area .widget-title span::before {
-    background-color: #ffb606;
+    background-color: #78B227;
     content: "";
     height: 1px;
     position: absolute;
@@ -1011,7 +1011,7 @@ a:active {
 }
 
 #home-page-widget-area .widget-title span::after {
-    background-color: #ffb606;
+    background-color: #78B227;
     content: "";
     height: 1px;
     position: absolute;
@@ -1078,7 +1078,7 @@ a:active {
     height: 15px;
     margin-right:8px;
     content: "";
-    color:#ffb606;
+    color:#78B227;
 }
 
 .entry-meta .byline .author.vcard {
@@ -1532,7 +1532,7 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #fff;  
+  color: #8a8a8a;  
 }
 
 #content {
@@ -1944,7 +1944,7 @@ li {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: #ffb606;
+    color: #78B227;
 }
 
 .top-header span i {
@@ -1978,7 +1978,6 @@ li {
 
 .bottom-header {
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .site-branding {
@@ -2026,7 +2025,7 @@ li {
 }
 
 .main-navigation ul li.current-menu-item  a {
-    border-top: 2px solid #ffb606;
+    border-top: 2px solid #78B227;
 }
 
 .main-navigation ul li ul {
@@ -2039,7 +2038,7 @@ li {
 
 .main-navigation ul li ul li a {
     padding: 10px;
-    background: #ffb606;
+    background: #78B227;
     border-bottom:0px;
     box-shadow: none;
 }
@@ -2109,8 +2108,8 @@ li {
     right:0;
     padding:16px 20px 16px 20px;
     border-radius: 0;
-    background-color:rgba(255,182,6,1);
-    background: rgba(255,182,6,1);
+    background-color:rgba(147, 200, 74,1);
+    background: rgba(147, 200, 74,1);
     border:0;
     line-height: 1;
     box-shadow: none;
@@ -2129,7 +2128,7 @@ li {
     position:fixed;
     top:0px;
     left:0px;
-    background: rgba(255,182,6,0.75);
+    background: rgba(187,234,123,0.75);
     z-index:99999999;
 }
  
@@ -2212,7 +2211,7 @@ li {
 
 .caption h3,
 .caption h2 span {
-    color: #ffb606;
+    color: #78B227;
 }
 
 
@@ -2248,7 +2247,7 @@ li {
     top:45%;
     z-index: 99;
     opacity: 0;
-    background: rgba(255,182,6,1);
+    background: rgba(147, 200, 74,1);
     border:0; 
 }
 
@@ -2259,7 +2258,7 @@ li {
 
 .slick-prev:hover,
 .slick-next:hover{
-    background: rgba(255,182,6,1);
+    background: rgba(147, 200, 74,1);
 }
 
 .slick-slider:hover .slick-prev,
@@ -2326,11 +2325,11 @@ li {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background:#ffb606;
+    background:#78B227;
     padding: 0px;
     display: inline-block;
     margin:0px 5px;
-    border-color:#ffb606; 
+    border-color:#78B227; 
     font-size: 0px;
     box-shadow: none;
 }
@@ -2366,7 +2365,7 @@ li {
 }
 
 .about-us-description {
-    background: #ffb606;
+    background: #78B227;
 }
 
 .about-us-description h2,
@@ -2508,7 +2507,7 @@ li {
     width: 70px;
     height: 3px;
     background: #434343;
-    border-left: 35px solid #ffb606;
+    border-left: 35px solid #78B227;
     margin-top: 20px;
 }
 
@@ -2704,7 +2703,7 @@ li {
 }
 
 .education-find-course-section .find-course-wrapper span {
-    color:#ffb606;
+    color:#78B227;
     margin-bottom: 10px;
 }
 
@@ -2734,9 +2733,9 @@ li {
 
 .education-find-course-section form input[type="submit"],
 .education-find-course-section form input[type="submit"]:hover {
-    background:#ffb606;
+    background:#78B227;
     color: #fff; 
-    border:1px solid #ffb606;
+    border:1px solid #78B227;
     width: 20%;
     float: left;
     padding: 13px 25px;
@@ -2801,7 +2800,7 @@ li {
 
 .education-our-team-section .our-team-item .our-team-inner .our-team-description span {
     font-size: 16px;
-    color: #ffb606;
+    color: #78B227;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -2926,7 +2925,7 @@ li {
 }
 
 .education-testimonial-section .testimonial-item .testimonial-caption:before{
-    color: #ffb606;
+    color: #78B227;
     content: "\f10d";
     font-family: "FontAwesome";
     font-size: 40px;
@@ -2971,7 +2970,7 @@ li {
 }
 
 .education-testimonial-section .testimonial-item .testimonial-meta .position{
-    color: #ffb606; 
+    color: #78B227; 
 }
 
 .education-testimonial-section .testimonial-item .testimonial-meta  .person-info {
@@ -3039,7 +3038,7 @@ li {
 
 .lates-news-title,
 .lates-news-title a {
-    color: #ffb606;
+    color: #78B227;
 }
 
 .education-blog-section .latest-news-item .news-inner .latest-news-description {
@@ -3109,7 +3108,7 @@ li {
     width: 100%;
     height: 2px;
     background: #ddd;
-    border-left: 100px solid #ffb606;
+    border-left: 100px solid #78B227;
     margin-top: 15px;
     float: left;
 
@@ -3127,7 +3126,7 @@ li {
 }
 
 .contact-part > ul li i {
-    color: #ffb606;
+    color: #78B227;
     font-size: 16px;
     font-family: "FontAwesome";
     float: left;
@@ -3157,9 +3156,9 @@ li {
 .newsletter-holder form input[type="submit"],
 .newsletter-holder form input[type="submit"]:hover{
     width: 35%;
-    background: #ffb606;
+    background: #78B227;
     color: #fff;
-    border: 1px solid #ffb606;
+    border: 1px solid #78B227;
     float: left;
     padding: 13px 25px;
     border-bottom: 0px;
@@ -3172,7 +3171,7 @@ li {
 .custom-wrapper {
     display: inline-block;
     background-color: #fff;
-    padding-top:40px;
+    padding-top:0px;
     padding-bottom: 40px;
     margin-top: 7px;
     width: 100%;
@@ -3333,7 +3332,7 @@ li {
 
 .blog-wrapper .blog-item .entry-title,
 .blog-wrapper .blog-item .entry-title a {
-    color: #ffb606;
+    color: #78B227;
     font-size: 16px;
     font-weight: 500;
 }
@@ -3402,7 +3401,7 @@ li {
 
 .blog-wrapper .blog-item .entry-header .entry-meta span.day,
 .blog-single-item .single-wrap .content-wrap .entry-header .entry-meta span.day{
-    background:rgba(255,182,6,1);
+    background:rgba(147, 200, 74,1);
 }
 
 .blog-wrapper .blog-item .entry-header .entry-meta span.month,
@@ -3455,7 +3454,7 @@ li {
     width:auto;
     margin:0px;
     padding:10px 15px;
-    color:#ffb606;
+    color:#78B227;
     cursor:pointer;
 }
 .wp-pagenavi a:hover, 
@@ -3469,7 +3468,7 @@ li {
 }
 .wp-pagenavi .current, 
 .wp-pagenavi .current:hover {
-    background:#ffb606;
+    background:#78B227;
     color:#fff;
 }
 
@@ -3482,16 +3481,16 @@ li {
     padding:8px 38px;
     margin-right:10px;
     background:#fff;
-    border:1px solid #ffb606;
+    border:1px solid #78B227;
     
 }
 
 .wp-pagenavi a.previouspostslink:hover,
 .wp-pagenavi a.nextpostslink:hover,
 .wp-pagenavi a.page:hover{
-    background:#ffb606;
+    background:#78B227;
     color:#fff;
-    border:1px solid #ffb606;
+    border:1px solid #78B227;
 }
 
 .wp-pagenavi a.page{
@@ -3501,18 +3500,18 @@ li {
     font-weight:400;
     background:#fff;
     margin-right:10px;
-    border:1px solid #ffb606;
+    border:1px solid #78B227;
 }
 
 .wp-pagenavi a.page.current{
-    background:#ffb606;
+    background:#78B227;
     color:#fff;
 }
 
 .wp-pagenavi a.page.current:hover{
-    background:#ffb606;
+    background:#78B227;
     color:#fff;
-    border:1px solid #ffb606;
+    border:1px solid #78B227;
 }
 
 .pagination-bx{
@@ -3536,7 +3535,7 @@ li {
 }
 
 .blog-single-item .single-wrap .content-wrap {
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 #comments p {
@@ -3550,14 +3549,14 @@ li {
 }
 
 #comments input[type="submit"]{
-    background: #ffb606;
+    background: #78B227;
     color: #fff;
-    border: 1px solid #ffb606;
+    border: 1px solid #78B227;
 }
 
 #comments input[type="submit"]:hover{
     background: transparent;
-    color: #ffb606;
+    color: #78B227;
 }
 
 /*--------------------------------------------------------------
@@ -3591,7 +3590,7 @@ li {
 .error-404.not-found  form.search-form input[type="submit"]{
     position: absolute;
     right: 0;
-    background-color: #ffb606;
+    background-color: #78B227;
     color: #fff; 
     border:0;
     padding: 13px 35px 14px 35px;
@@ -3599,7 +3598,7 @@ li {
 }
 
 .error-404.not-found  form.search-form input[type="submit"]:hover{
-    background-color: #ffb606;
+    background-color: #78B227;
     color: #fff;
     border:0;
 }
@@ -3647,7 +3646,7 @@ li {
 .search-no-results .no-results.not-found form.search-form input[type="submit"]{
     position: absolute;
     right: 0;
-    background-color: #ffb606;
+    background-color: #78B227;
     color: #fff; 
     border:0;
     padding: 13px 35px 14px 35px;
@@ -3655,7 +3654,7 @@ li {
 }
 
 .search-no-results .no-results.not-found  form.search-form input[type="submit"]:hover{
-    background-color: #ffb606;
+    background-color: #78B227;
     color: #fff;
     border:0;
 }
@@ -3728,8 +3727,8 @@ li {
     right:0;
     padding:15px 20px 15px 20px;
     border-radius: 0;
-    background-color:rgba(255,182,6,1);
-    background: rgba(255,182,6,1);
+    background-color:rgba(147, 200, 74,1);
+    background: rgba(147, 200, 74,1);
     border:0;
     line-height: 1;
     box-shadow: none;
@@ -3820,7 +3819,7 @@ blockquote {
 	display: inline-block;
 	width: 100%;
 	padding: 20px;
-	border-left: 5px solid rgba(255,182,6,1);
+	border-left: 5px solid rgba(147, 200, 74,1);
 	background: #f7f7f7;
 }
 
@@ -3829,7 +3828,7 @@ blockquote p {
 }
 
 .gotop {
-	background-color: rgba(255,182,6,1);
+	background-color: rgba(147, 200, 74,1);
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -3924,7 +3923,7 @@ blockquote p {
 }
 
 .site-footer {
-    background: #111;
+    background: #111; 
 }
 
 .site-info-holder {
@@ -3939,7 +3938,7 @@ blockquote p {
 }
 
 .site-footer .copyright a {
-    color: #ffb606;
+    color: #78B227;
 }
 
 .site-footer .site-links {
@@ -3985,11 +3984,11 @@ blockquote p {
 }
 
 .mean-container a.meanmenu-reveal span {
-	background: rgba(255,182,6,1);
+	background: rgba(147, 200, 74,1);
 }
 
 .mean-container a.meanmenu-reveal {
-	color:rgba(255,182,6,1); 
+	color:rgba(147, 200, 74,1); 
 }
 
 
@@ -4274,7 +4273,7 @@ blockquote p {
 
      #primary,
      #sidebar-primary  {
-        width: 0%;
+        width: 100%;
     }
 
     #primary {

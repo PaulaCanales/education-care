@@ -22,7 +22,7 @@ if ( ! ( is_front_page() && ! is_home() ) ) {
 ?>
 <section id="featured-slider">
     <div id="main-banner">
-        <div class="slick-main-slider">
+        <div class="slick-main-slider" >
         	<?php
         	for ($i=0; $i<5 ; $i++){
 				$slide = $slider_details[$i];
@@ -36,8 +36,8 @@ if ( ! ( is_front_page() && ! is_home() ) ) {
         				$link_closing = '</a>';
         			} ?>
 
-			            <div class="item" style="background:url(<?php echo esc_url( $slide['image_url'] ); ?>) top center; background-size:cover;">
-			                <div class="container">
+			            <div class="item" style="background:url(<?php echo esc_url( $slide['image_url'] ); ?>) top center; background-size: cover; height: 500px; opacity: 0.6;">
+			                <div class="container" style="padding-right: 5%; padding-left: 5%">
 			                	<?php echo $link_opening; ?>
 				                    <div class="caption">
 				                        <?php 
